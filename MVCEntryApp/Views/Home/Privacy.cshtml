@@ -1,0 +1,22 @@
+﻿<!-- Privacy.cshtml -->
+@model LogEntry
+
+@{
+    // Setting the title of the view to "Privacy Policy"
+    ViewData["Title"] = "Privacy Policy";
+}
+
+<!-- Displaying the title of the view -->
+<h1>@ViewData["Title"]</h1>
+
+<!-- Providing a description -->
+<p>This page shows the latest log entry:</p>
+
+<!-- Displaying log entry details in an unordered list -->
+<ul>
+    <!-- Displaying the Date/Time of the latest log entry -->
+    <li>Date/Time: @Model.DateTime</li>
+
+    <!-- Displaying the IP Address of the latest log entry -->
+    <li>IP Address: @Model.IpAddress</li>
+</ul>
